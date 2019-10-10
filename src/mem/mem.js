@@ -1,4 +1,18 @@
+function shuffle(card) {
+  let currentIndex = card.length, temporaryValue, randomIndex;
 
+  while (0 !== currentIndex) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    temporaryValue = array[currentIndex];
+    card[currentIndex] = array[randomIndex];
+    card[randomIndex] = temporaryValue;
+  }
+
+  return card;
+}
 
 let card = [{foto: "",texto:"text",idPar:1,estado:"oculto",id:1},
 {foto: "",texto:"text",idPar:1,estado:"oculto",id:1},
