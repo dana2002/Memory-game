@@ -7,14 +7,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url("http://www.arielcelaya.com.ar/multimedia/wp-content/uploads/2015/10/FondoLejos.png");
 }
 
 .App-link {
