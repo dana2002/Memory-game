@@ -3,13 +3,15 @@ import './Card.css';
 
 
 class Card extends React.Component {
-  onSelect = () => {
+
+  onselect = () => {
     this.props.onClickCard(this.props.card)
   }
+
   render(){
     return( 
       
-      <div className="all-card" onClick={this.onSelect}>
+      <div className="all-card" onClick={this.onselect}>
         {
         this.props.card.estado === 'oculta' ?
         <div className="oculta"></div>
